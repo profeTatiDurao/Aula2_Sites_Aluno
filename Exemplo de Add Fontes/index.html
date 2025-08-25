@@ -2,64 +2,114 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Exemplos com Google Fonts</title>
+  <title>Exemplos de Fontes com Google Fonts</title>
 
-  <!-- Importando fontes do Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- Importando várias fontes do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Montserrat&family=Playfair+Display&family=Indie+Flower&family=Oswald&family=Lobster&family=Raleway&family=Shadows+Into+Light&family=Anton&family=Quicksand&family=Courier+Prime&display=swap" rel="stylesheet">
 
   <style>
     body {
-      padding: 20px;
       font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
     }
 
-    .fonte-roboto {
-      font-family: 'Roboto', sans-serif;
-      font-size: 20px;
-      color: #333;
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
     }
 
-    .fonte-pacifico {
-      font-family: 'Pacifico', cursive;
-      font-size: 24px;
-      color: #0077cc;
+    .fonte-box {
+      margin-bottom: 20px;
+      padding: 15px;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background-color: #fff;
     }
 
-    .fonte-montserrat {
-      font-family: 'Montserrat', sans-serif;
+    .roboto             { font-family: 'Roboto', sans-serif; }
+    .pacifico           { font-family: 'Pacifico', cursive; }
+    .montserrat         { font-family: 'Montserrat', sans-serif; }
+    .playfair           { font-family: 'Playfair Display', serif; }
+    .indie              { font-family: 'Indie Flower', cursive; }
+    .oswald             { font-family: 'Oswald', sans-serif; }
+    .lobster            { font-family: 'Lobster', cursive; }
+    .raleway            { font-family: 'Raleway', sans-serif; }
+    .shadows            { font-family: 'Shadows Into Light', cursive; }
+    .anton              { font-family: 'Anton', sans-serif; }
+    .quicksand          { font-family: 'Quicksand', sans-serif; }
+    .courier            { font-family: 'Courier Prime', monospace; }
+
+    .fonte-box span {
       font-size: 22px;
-      color: #cc3300;
-    }
-
-    button {
-      margin-top: 10px;
+      display: block;
+      margin-top: 5px;
     }
   </style>
 </head>
 <body>
 
-  <h1>Fontes do Google Fonts</h1>
+  <h1>Galeria de Fontes com Google Fonts</h1>
 
-  <div class="fonte-roboto" id="texto1">
-    Este texto usa a fonte Roboto.
+  <div class="fonte-box roboto">
+    <strong>Roboto</strong>
+    <span>Texto com fonte Roboto</span>
   </div>
-  <button onclick="alterarTexto('texto1', 'Você alterou o texto com Roboto!')">Alterar Roboto</button>
 
-  <div class="fonte-pacifico" id="texto2">
-    Este texto usa a fonte Pacifico.
+  <div class="fonte-box pacifico">
+    <strong>Pacifico</strong>
+    <span>Texto com fonte Pacifico</span>
   </div>
-  <button onclick="alterarTexto('texto2', 'Texto com Pacifico modificado!')">Alterar Pacifico</button>
 
-  <div class="fonte-montserrat" id="texto3">
-    Este texto usa a fonte Montserrat.
+  <div class="fonte-box montserrat">
+    <strong>Montserrat</strong>
+    <span>Texto com fonte Montserrat</span>
   </div>
-  <button onclick="alterarTexto('texto3', 'Montserrat agora tem novo conteúdo!')">Alterar Montserrat</button>
 
-  <script>
-    function alterarTexto(id, novoTexto) {
-      document.getElementById(id).textContent = novoTexto;
-    }
-  </script>
+  <div class="fonte-box playfair">
+    <strong>Playfair Display</strong>
+    <span>Texto com fonte Playfair Display</span>
+  </div>
+
+  <div class="fonte-box indie">
+    <strong>Indie Flower</strong>
+    <span>Texto com fonte Indie Flower</span>
+  </div>
+
+  <div class="fonte-box oswald">
+    <strong>Oswald</strong>
+    <span>Texto com fonte Oswald</span>
+  </div>
+
+  <div class="fonte-box lobster">
+    <strong>Lobster</strong>
+    <span>Texto com fonte Lobster</span>
+  </div>
+
+  <div class="fonte-box raleway">
+    <strong>Raleway</strong>
+    <span>Texto com fonte Raleway</span>
+  </div>
+
+  <div class="fonte-box shadows">
+    <strong>Shadows Into Light</strong>
+    <span>Texto com fonte Shadows Into Light</span>
+  </div>
+
+  <div class="fonte-box anton">
+    <strong>Anton</strong>
+    <span>Texto com fonte Anton</span>
+  </div>
+
+  <div class="fonte-box quicksand">
+    <strong>Quicksand</strong>
+    <span>Texto com fonte Quicksand</span>
+  </div>
+
+  <div class="fonte-box courier">
+    <strong>Courier Prime</strong>
+    <span>Texto com fonte Courier Prime</span>
+  </div>
 
 </body>
 </html>
