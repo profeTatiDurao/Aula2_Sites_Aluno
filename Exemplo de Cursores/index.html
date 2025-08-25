@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tipos de Cursores em CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .cursor-box {
+      background-color: #fff;
+      padding: 20px;
+      border: 2px solid #ccc;
+      text-align: center;
+      border-radius: 8px;
+      transition: background-color 0.3s ease;
+    }
+
+    .cursor-box:hover {
+      background-color: #e0f7fa;
+    }
+
+    .default      { cursor: default; }
+    .pointer      { cursor: pointer; }
+    .text         { cursor: text; }
+    .move         { cursor: move; }
+    .wait         { cursor: wait; }
+    .help         { cursor: help; }
+    .not-allowed  { cursor: not-allowed; }
+    .progress     { cursor: progress; }
+    .crosshair    { cursor: crosshair; }
+    .grab         { cursor: grab; }
+    .grabbing     { cursor: grabbing; }
+    .zoom-in      { cursor: zoom-in; }
+    .zoom-out     { cursor: zoom-out; }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de Cursores com CSS</h1>
+
+  <div class="grid">
+    <div class="cursor-box default">default → seta padrão</div>
+    <div class="cursor-box pointer">pointer → mãozinha de link 🔗</div>
+    <div class="cursor-box text">text → cursor de digitação</div>
+    <div class="cursor-box move">move → setas em cruz</div>
+    <div class="cursor-box wait">wait → relógio/carregando</div>
+    <div class="cursor-box help">help → interrogação</div>
+    <div class="cursor-box not-allowed">not-allowed → proibido 🚫</div>
+    <div class="cursor-box progress">progress → carregando + seta</div>
+    <div class="cursor-box crosshair">crosshair → cruz fina</div>
+    <div class="cursor-box grab">grab → mão aberta ✋</div>
+    <div class="cursor-box grabbing">grabbing → mão fechada ✊</div>
+    <div class="cursor-box zoom-in">zoom-in → lupa com + 🔍➕</div>
+    <div class="cursor-box zoom-out">zoom-out → lupa com – 🔍➖</div>
+  </div>
+
+</body>
+</html>

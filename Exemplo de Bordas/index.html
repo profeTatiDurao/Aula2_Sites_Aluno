@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Tipos de Bordas em CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .box {
+      padding: 20px;
+      text-align: center;
+      background-color: #fff;
+      border-width: 4px;
+      border-color: #333;
+      transition: transform 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      cursor: pointer;
+    }
+
+    .solid    { border-style: solid; }
+    .dashed   { border-style: dashed; }
+    .dotted   { border-style: dotted; }
+    .double   { border-style: double; }
+    .groove   { border-style: groove; }
+    .ridge    { border-style: ridge; }
+    .inset    { border-style: inset; }
+    .outset   { border-style: outset; }
+    .none     { border-style: none; }
+    .hidden   { border-style: hidden; }
+
+    .highlight {
+      background-color: #e0f7fa;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Exemplos de Bordas com CSS</h1>
+
+  <div class="container">
+    <div class="box solid" onclick="destacar(this)">solid → linha contínua</div>
+    <div class="box dashed" onclick="destacar(this)">dashed → linha tracejada</div>
+    <div class="box dotted" onclick="destacar(this)">dotted → linha pontilhada</div>
+    <div class="box double" onclick="destacar(this)">double → linha dupla</div>
+    <div class="box groove" onclick="destacar(this)">groove → efeito entalhado</div>
+    <div class="box ridge" onclick="destacar(this)">ridge → efeito em relevo</div>
+    <div class="box inset" onclick="destacar(this)">inset → parece afundada</div>
+    <div class="box outset" onclick="destacar(this)">outset → parece levantada</div>
+    <div class="box none" onclick="destacar(this)">none → sem borda</div>
+    <div class="box hidden" onclick="destacar(this)">hidden → borda oculta</div>
+  </div>
+
+  <script>
+    function destacar(elemento) {
+      // Remove destaque de todos os elementos
+      document.querySelectorAll('.box').forEach(box => box.classList.remove('highlight'));
+      // Adiciona destaque ao clicado
+      elemento.classList.add('highlight');
+    }
+  </script>
+
+</body>
+</html>

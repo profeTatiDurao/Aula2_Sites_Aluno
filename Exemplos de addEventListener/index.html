@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos de addEventListener</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    .caixa { margin: 10px 0; padding: 10px; border: 1px solid #ccc; }
+    input, button { margin-top: 5px; }
+  </style>
+</head>
+<body>
+
+  <h1>Demonstrando addEventListener</h1>
+
+  <!-- Click -->
+  <div class="caixa">
+    <button id="btnClick">Clique aqui</button>
+  </div>
+
+  <!-- Mouseover -->
+  <div class="caixa" id="mouseArea" style="background-color: #f0f0f0;">
+    Passe o mouse por cima desta área
+  </div>
+
+  <!-- Keydown -->
+  <div class="caixa">
+    Pressione qualquer tecla no teclado (ver console)
+  </div>
+
+  <!-- Submit -->
+  <div class="caixa">
+    <form id="formExemplo">
+      <input type="text" placeholder="Digite algo" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+
+  <!-- Touchstart -->
+  <div class="caixa" id="touchArea" style="background-color: #e0ffe0;">
+    Toque aqui (em dispositivos móveis)
+  </div>
+
+  <!-- Change -->
+  <div class="caixa">
+    <input type="text" id="inputChange" placeholder="Altere o valor">
+  </div>
+
+  <!-- Focus e Blur -->
+  <div class="caixa">
+    <input type="text" id="inputFocus" placeholder="Foco e perda de foco">
+  </div>
+
+  <script>
+    // Click
+    document.getElementById('btnClick').addEventListener('click', function() {
+      alert('Botão clicado!');
+    });
+
+    // Mouseover
+    document.getElementById('mouseArea').addEventListener('mouseover', function() {
+      console.log('Mouse passou por cima!');
+    });
+
+    // Keydown
+    document.addEventListener('keydown', function(event) {
+      console.log('Tecla pressionada:', event.key);
+    });
+
+    // Submit
+    document.getElementById('formExemplo').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Formulário enviado!');
+    });
+
+    // Touchstart
+    document.getElementById('touchArea').addEventListener('touchstart', function() {
+      alert('Toque detectado!');
+    });
+
+    // Change
+    document.getElementById('inputChange').addEventListener('change', function() {
+      console.log('Novo valor:', this.value);
+    });
+
+    // Focus e Blur
+    const inputFocus = document.getElementById('inputFocus');
+    inputFocus.addEventListener('focus', () => console.log('Campo focado'));
+    inputFocus.addEventListener('blur', () => console.log('Campo perdeu o foco'));
+  </script>
+
+</body>
+</html>

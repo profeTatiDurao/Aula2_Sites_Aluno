@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Exemplos com Google Fonts</title>
+
+  <!-- Importando fontes do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Pacifico&family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      padding: 20px;
+      font-family: Arial, sans-serif;
+    }
+
+    .fonte-roboto {
+      font-family: 'Roboto', sans-serif;
+      font-size: 20px;
+      color: #333;
+    }
+
+    .fonte-pacifico {
+      font-family: 'Pacifico', cursive;
+      font-size: 24px;
+      color: #0077cc;
+    }
+
+    .fonte-montserrat {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 22px;
+      color: #cc3300;
+    }
+
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fontes do Google Fonts</h1>
+
+  <div class="fonte-roboto" id="texto1">
+    Este texto usa a fonte Roboto.
+  </div>
+  <button onclick="alterarTexto('texto1', 'Você alterou o texto com Roboto!')">Alterar Roboto</button>
+
+  <div class="fonte-pacifico" id="texto2">
+    Este texto usa a fonte Pacifico.
+  </div>
+  <button onclick="alterarTexto('texto2', 'Texto com Pacifico modificado!')">Alterar Pacifico</button>
+
+  <div class="fonte-montserrat" id="texto3">
+    Este texto usa a fonte Montserrat.
+  </div>
+  <button onclick="alterarTexto('texto3', 'Montserrat agora tem novo conteúdo!')">Alterar Montserrat</button>
+
+  <script>
+    function alterarTexto(id, novoTexto) {
+      document.getElementById(id).textContent = novoTexto;
+    }
+  </script>
+
+</body>
+</html>
